@@ -1,0 +1,196 @@
+{
+    "productos": [
+        {
+            "id":"1",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"15"
+        },
+        {
+            "id":"2",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"16"
+        },
+        {
+            "id":"3",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"17"
+        },
+        {
+            "id":"4",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"18"
+        },
+        {
+            "id":"5",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"19"
+        },
+        {
+            "id":"6",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"20"
+        },
+        {
+            "id":"7",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"15"
+        },
+        {
+            "id":"8",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"9",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"10",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"11",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"12",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"13",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"14",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"15",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"16",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"17",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {   
+            "id":"18",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {   
+            "id":"19",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"20",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"21",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"22",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"23",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"24",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"25",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"26",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"27",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"28",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"29",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"30",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"31",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        },
+        {
+            "id":"32",
+            "img":"/img/condensador.jpg",
+            "titulo":"PRODUCTO NOMBRE",
+            "precio":"******"
+        }
+    ]
+}

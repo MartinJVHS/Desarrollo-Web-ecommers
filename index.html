@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/styles-media.css">
+        <title>UniTeck</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="section-header">
+                <div class="menu-btns-burger">
+                    <a href="" class="ancla-burger"></a>
+                </div>
+                <div class="section-header-mobile">
+                    <nav class="nav-aside-mobile">
+                        <ul class="bar-vertical-mobile-principal">
+                            <li class="bar-vertical-exterior-category-mobile">
+                                <a href="">CATEGORIAS</a>
+                                <ul class="bar-vertical-mobile">
+                                    <li class="bar-vertical-exterior-mobile">
+                                        <a href="">COMPONENTES ELECTRICOS</a>
+                                        <ul class="bar-vertical-interior-mobile">
+                                            <li><a href="./html/producto.html">CAPASITORES</a></li>
+                                            <li><a href="">SMD</a></li>
+                                            <li><a href="">TRANSISTORES</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="bar-vertical-exterior-mobile">
+                                        <a href="">ILUMINACION</a>
+                                        <ul class="bar-vertical-interior-mobile">
+                                            <li><a href="">CELDAS LED</a></li>
+                                            <li><a href="">PLAFONES</a></li>
+                                            <li><a href="">TRANSFORMADORES</a></li>
+                                        </ul>  
+                                    </li>
+                                    <li class="bar-vertical-exterior-mobile">
+                                        <a href="">INDUSTRIAL</a>
+                                        <ul class="bar-vertical-interior-mobile">
+                                            <li><a href="">CABLEADO</a></li>
+                                            <li><a href="">CONECTORES DE ALTA</a></li>
+                                            <li><a href="">TRANSFORMADORES DE ALTA</a></li>
+                                        </ul>
+                                    </li>     
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="logo-div">
+                    <img class="logo "src="./img/unitecklogonyn.png"><br>
+                    <span class="sfirst">Uni<span class="slast">Teck</span></span>
+                </div>
+                <div class="container-btns-search">
+                    <div class="container-search">
+                        <input class="search" type="text" placeholder="Buscar aqui...">
+                        <div class="icon-search"><i class="fas fa-search"></i></div>
+                        <div id="btn-cart" class="btns-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="CantCartProd" class="class-CantCartProd">0</span>
+                        </div>
+                    </div>
+                    <div class="div-btns-inicio">
+                        <ul class="bar-horizontal"> 
+                            <li><a href="">INICIO</a></li>
+                            <li><a href="">MAS DESTACADOS</a></li>
+                            <li><a href="">CATEGORIAS</a></li>
+                            <li><a href="">NOSOTROS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo-div-src">
+                    <img id="logo-mobile" class="logo" src="./img/unitecklogonyn.png"><br>
+                    <span class="sfirst">Uni<span class="slast">Teck</span></span>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <aside class="main-category">
+                <nav class="nav-aside"> 
+                    <ul class="bar-vertical">
+                        <li class="bar-vertical-exterior">
+                            <a href="">COMPONENTES ELECTRICOS</a>
+                            <ul class="bar-vertical-interior">
+                                <li><a href="">CAPASITORES</a></li>
+                                <li><a href="">SMD</a></li>
+                                <li><a href="">TRANSISTORES</a></li>
+                            </ul>
+                        </li>
+                        <li class="bar-vertical-exterior">
+                            <a href="">ILUMINACION</a>
+                            <ul class="bar-vertical-interior">
+                                <li><a href="">CELDAS LED</a></li>
+                                <li><a href="">PLAFONES</a></li>
+                                <li><a href="">TRANSFORMADORES</a></li>
+                            </ul>  
+                        </li>
+                        <li class="bar-vertical-exterior">
+                            <a href="">INDUSTRIAL</a>
+                            <ul class="bar-vertical-interior">
+                                <li><a href="">CABLEADO</a></li>
+                                <li><a href="">CONECTORES DE ALTA</a></li>
+                                <li><a href="">TRANSFORMADORES DE ALTA</a></li>
+                            </ul>
+                        </li>     
+                    </ul>
+                </nav>
+            </aside>
+            <section class="main-products">
+                <h1 class="title-category">CONDENSADORES</h1>
+                <div id = "id-cards-products"class="cards-products">
+                </div>
+            </section>
+            <form id="popup-form" class="popup-cart-bg" method="get">
+                <div id="popup-form-div" class="popup-cart-content">
+                    <div class="popup-cart-close-container">
+                        <div class="popup-cart-close"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <header class="popup-cart-header">
+                        <h1 class="popup-cart-title">Tus Articulos</h1>
+                    </header>
+                    <div id = "popup-cart-main" class="popup-cart-main">
+                    </div>
+                    <footer class="popup-cart-footer">
+                        <div class="popup-cart-total">
+                            <span>Total: $</span>
+                            <span id="totalprecio" class="popup-cart-price-total">0</span>
+                        </div>
+                        <button class="popup-cart-btn" form="popup-form" type ="submit" formmethod="get">Comprar</button>
+                    </footer>
+                </div>
+            </form>
+        </main>
+        <script src="./json/main.js"></script>
+    </body>
+</html>
