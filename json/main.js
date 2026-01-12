@@ -226,4 +226,6 @@ async function verifictlocal(){
     }
 }
 
+console.log('hola')
+
 window.addEventListener('resize', RepositionarCarrito);
