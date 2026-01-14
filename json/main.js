@@ -26,7 +26,7 @@ fetch('/json/metadata.json')
     .then(data => {
         metadata = data; 
         chargedata(metadata);
-        verifictlocal();
+        // verifictlocal();
     })
     .catch(error => {
         console.error("Error al cargar los metadatos:", error);
@@ -109,8 +109,8 @@ function ActualizarCarrito() {
                         <img class = "cart-item-img-ui" src="${PRODUCTO.img}" alt="Imagen del producto">
                     </div>
                     <div class="cart-item-title-price">
-                        <h3>${PRODUCTO.titulo}</h3>
-                        <p>Precio: $${PRODUCTO.precio}</p>
+                        <h3 class="title-product-cart">${PRODUCTO.titulo}</h3>
+                        <p class="price-product-cart">Precio: $${PRODUCTO.precio}</p>
                     </div>
                     <div class="cart-item-btns"> 
                         <div class="cart-item-decrese">
@@ -194,7 +194,7 @@ function RepositionarCarrito() {
     if (FORMCARRITO.classList.contains('active')) { 
         const RECT = BTNABRIR.getBoundingClientRect();
         const RECTLOG = LOGOMOBILE.getBoundingClientRect();
-        if(!window.matchMedia("(width <= 600px)").matches){
+        if(!window.matchMedia("(width <= 974px)").matches){
             FORMCARRITOCONTENT.style.left = `${RECT.right - FORMCARRITOCONTENT.offsetWidth}px`;
             FORMCARRITOCONTENT.style.top = `${RECT.top}px`;
         }else {

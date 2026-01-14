@@ -1,7 +1,10 @@
+*{
+    font-family: "Hind Vadodara", sans-serif;
+}
+
 aside, html, body, p, h1, h2, .bar-vertical, nav, ul, li, a{
     margin: 0;
     padding: 0;
-    font-family: "Hind Vadodara", sans-serif;
     scrollbar-color: var(--color-secondary) var(--color-primary);
     scrollbar-width: thin;
 }
@@ -151,7 +154,7 @@ body{
     color: #000000;
     font-size: clamp(12px,calc(1vw + 10px),20px);
     cursor: pointer;
-    margin-left: calc(var(--width-search-1) - 15px);
+    margin-left: calc(var(--width-search-1) - 30px);
 }
 
 .icon-search:hover{
@@ -383,10 +386,14 @@ body{
     align-items: flex-start;
     justify-content: center;
     margin-left: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     flex-grow: 1;
     color: var(--color-white);
-    font-size: 15px;
+    font-size: 18px;
+}
+
+.title-product-cart{
+    font-size: 18px;
 }
 
 .cart-item-img-ui{
@@ -496,7 +503,7 @@ body{
 
 .input-cant{
     width: 25px;
-    height: 20px;
+    height: 35px;
     text-align: center;
     font-size: 16px;
     border-radius: 5px;
