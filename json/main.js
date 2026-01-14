@@ -26,7 +26,7 @@ fetch('/json/metadata.json')
     .then(data => {
         metadata = data; 
         chargedata(metadata);
-        // verifictlocal();
+        verifictlocal();
     })
     .catch(error => {
         console.error("Error al cargar los metadatos:", error);
