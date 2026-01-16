@@ -23,10 +23,6 @@ aside, html, body, p, h1, h2, .bar-vertical, nav, ul, li, a{
     --height-img-product:250px;
 }
 
-.body{
-    
-}
-
 body{
     background-color: var(--color-primary);
 }
