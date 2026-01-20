@@ -468,6 +468,7 @@ body{
     cursor: pointer;
     padding-top: 4px;
     padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 
 .button-shop:hover{
