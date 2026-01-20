@@ -1,14 +1,23 @@
-const LOGOMOBILE = document.getElementById('logo-mobile');
-const FORMCARRITO = document.getElementById('popup-form');
 const FORMCARRITOCONTENT = document.querySelector('.popup-cart-content');
-const BTNABRIR = document.getElementById('btn-cart');
 const BTNCERRAR = document.querySelector('.popup-cart-close');
-const SPANCOUNT = document.getElementById('CantCartProd');
 const BTNCOMPRAR = document.querySelector('.popup-cart-btn');
 const POPUPCARTPRICE = document.querySelector('.popup-cart-total');
+const TITULOCATEGORIA = document.querySelector('.title-category');
+
+const LOGOMOBILE = document.getElementById('logo-mobile');
+const FORMCARRITO = document.getElementById('popup-form');
+const SPANCOUNT = document.getElementById('CantCartProd');
+const BTNABRIR = document.getElementById('btn-cart');
 const TOTALPRECIO = document.getElementById('totalprecio');
-var metadata;
-let category=['smd', 'condensador'];
+const BOTONES = ['btncatcompelec', 'btncatilumi', 'btncatindus', 'btncapasitor', 'btnsmd', 'btntransi', 'btnceled', 'btnplaf', 'btntransf', 'btncabl', 'btnconectalt', 'btntransfalt'];
+const CATEGORIAS = [['capasitor', 'smd', 'transistor'],['celdasled', 'plafones', 'transformador'],['cableado', 'conectoralt', 'trasnformadoralt'],['capasitor'],['smd'],['transistor'],['celdasled'],['plafones'],['transformador'],['cableado'],['conectoralt'],['trasnformadoralt']];
+const TITULOS = ['COMPONENTES ELECTRONICOS', 'ILUMINACION', 'INDUSTRIAL', 'CAPASITOR', 'SMD', 'TRANSITOR', 'CELDAS LED', 'PLAFONES', 'TRANSOFRMADORES', 'CABLEADO', 'CONECOTRES DE ALTA', 'TRANSOFORMADOR DE ALTA'];
+
+
+
+var metadata = [];
+let fetchfin = false;
+let category = [];
 let Productos = '';
 let Producto = '';
 let Carrito = [];
@@ -25,14 +34,22 @@ fetch('/json/metadata.json')
         return response.json(); 
     })
     .then(data => {
-        metadata = data; 
-        chargedata(metadata, category);
+        metadata = data;
+        fetchfin = true;
         verifictlocal();
     })
     .catch(error => {
         console.error("Error al cargar los metadatos:", error);
     }
 );
+
+BOTONES.forEach((Boton, index) => {
+    document.getElementById(Boton).addEventListener('click', function() {
+        category = CATEGORIAS[index];
+        TITULOCATEGORIA.textContent = TITULOS[index];
+        chargedata(metadata, category);
+    });
+});
 
 function chargedata(metadata, category)  {
     if (!localStorage.getItem('spancount')) {
@@ -46,7 +63,7 @@ function chargedata(metadata, category)  {
                         <img src="${Producto.img}" alt="Imagen del producto">
                     </div>
                     <div class="card-product-title-price">
-                        <a href=""><h2 class="title-product">${Producto.titulo}</h2></a>
+                        <a href="#"><h2 class="title-product">${Producto.titulo}</h2></a>
                         <p>Precio: $${Producto.precio}</p>
                     </div>
                     <div class="btn-products">

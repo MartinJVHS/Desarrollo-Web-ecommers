@@ -3,226 +3,226 @@
         { 
             "id":"1", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 1", 
+            "titulo":"capasitor Modelo 1", 
             "precio":"46",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"2", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 2", 
+            "titulo":"capasitor Modelo 2", 
             "precio":"52",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"3", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 3", 
+            "titulo":"capasitor Modelo 3", 
             "precio":"58",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"4", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 4", 
+            "titulo":"capasitor Modelo 4", 
             "precio":"36",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"5", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 5", 
+            "titulo":"capasitor Modelo 5", 
             "precio":"56",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"6", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 6", 
+            "titulo":"capasitor Modelo 6", 
             "precio":"78",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"7", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 7", 
+            "titulo":"capasitor Modelo 7", 
             "precio":"98",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"8", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 8", 
+            "titulo":"capasitor Modelo 8", 
             "precio":"50",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"9", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 9", 
+            "titulo":"capasitor Modelo 9", 
             "precio":"24",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"10", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 10", 
+            "titulo":"capasitor Modelo 10", 
             "precio":"96",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"11", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 11", 
+            "titulo":"capasitor Modelo 11", 
             "precio":"18",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"12", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 12", 
+            "titulo":"capasitor Modelo 12", 
             "precio":"3",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"13", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 13", 
+            "titulo":"capasitor Modelo 13", 
             "precio":"24",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"14", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 14", 
+            "titulo":"capasitor Modelo 14", 
             "precio":"40",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"15", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 15", 
+            "titulo":"capasitor Modelo 15", 
             "precio":"14",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"16", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 16", 
+            "titulo":"capasitor Modelo 16", 
             "precio":"94",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"17", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 17", 
+            "titulo":"capasitor Modelo 17", 
             "precio":"6",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"18", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 18", 
+            "titulo":"capasitor Modelo 18", 
             "precio":"39",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"19", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 19", 
+            "titulo":"capasitor Modelo 19", 
             "precio":"32",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"20", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 20", 
+            "titulo":"capasitor Modelo 20", 
             "precio":"17",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"21", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 21", 
+            "titulo":"capasitor Modelo 21", 
             "precio":"86",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"22", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 22", 
+            "titulo":"capasitor Modelo 22", 
             "precio":"96",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"23", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 23", 
+            "titulo":"capasitor Modelo 23", 
             "precio":"64",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"24", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 24", 
+            "titulo":"capasitor Modelo 24", 
             "precio":"99",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"25", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 25", 
+            "titulo":"capasitor Modelo 25", 
             "precio":"74",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"26", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 26", 
+            "titulo":"capasitor Modelo 26", 
             "precio":"56",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"27", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 27", 
+            "titulo":"capasitor Modelo 27", 
             "precio":"37",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"28", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 28", 
+            "titulo":"capasitor Modelo 28", 
             "precio":"78",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"29", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 29", 
+            "titulo":"capasitor Modelo 29", 
             "precio":"67",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"30", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 30", 
+            "titulo":"capasitor Modelo 30", 
             "precio":"86",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"31", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 31", 
+            "titulo":"capasitor Modelo 31", 
             "precio":"51",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         }, 
         { 
             "id":"32", 
             "img":"/img/condensador.jpg", 
-            "titulo":"condensador Modelo 32", 
+            "titulo":"capasitor Modelo 32", 
             "precio":"62",
-            "categoria": "condensador"
+            "categoria": "capasitor"
         },
         { 
             "id":"33", 
