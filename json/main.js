@@ -43,9 +43,13 @@ fetch('/json/metadata.json')
 
 BOTONES.forEach((Boton, index) => {
     document.getElementById(Boton).addEventListener('click', function() {
-        category = CATEGORIAS[index];
-        TITULOCATEGORIA.textContent = TITULOS[index];
-        chargedata(metadata, category);
+        if(fetchfin){
+            category = CATEGORIAS[index];
+            TITULOCATEGORIA.textContent = TITULOS[index];
+            chargedata(metadata, category);
+        }else{
+            alert("No se puedo acceder a la base de datos")
+        }
     });
 });
 
