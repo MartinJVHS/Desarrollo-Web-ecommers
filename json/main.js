@@ -9,6 +9,8 @@ const FORMCARRITO = document.getElementById('popup-form');
 const SPANCOUNT = document.getElementById('CantCartProd');
 const BTNABRIR = document.getElementById('btn-cart');
 const TOTALPRECIO = document.getElementById('totalprecio');
+const POPCARTMAIN = document.getElementById('popup-cart-main');
+const IDCARTPROD = document.getElementById('id-cards-products');
 const BOTONES = ['btncatcompelec', 'btncatilumi', 'btncatindus', 'btncapasitor', 'btnsmd', 'btntransi', 'btnceled', 'btnplaf', 'btntransf', 'btncabl', 'btnconectalt', 'btntransfalt'];
 const CATEGORIAS = [['capasitor', 'smd', 'transistor'],['celdasled', 'plafones', 'transformador'],['cableado', 'conectoralt', 'trasnformadoralt'],['capasitor'],['smd'],['transistor'],['celdasled'],['plafones'],['transformador'],['cableado'],['conectoralt'],['trasnformadoralt']];
 const TITULOS = ['COMPONENTES ELECTRONICOS', 'ILUMINACION', 'INDUSTRIAL', 'CAPASITOR', 'SMD', 'TRANSITOR', 'CELDAS LED', 'PLAFONES', 'TRANSOFRMADORES', 'CABLEADO', 'CONECOTRES DE ALTA', 'TRANSOFORMADOR DE ALTA'];
@@ -74,7 +76,7 @@ function chargedata(metadata, category)  {
             </div>
     `});
     Productos = SEARCHRESULT.join('');
-    document.getElementById('id-cards-products').innerHTML = Productos;
+    IDCARTPROD.innerHTML = Productos;
     const BUTTONSHOP = document.querySelectorAll('.button-shop');
     BUTTONSHOP.forEach(Button => {
         Button.addEventListener('click', function() {
@@ -108,7 +110,7 @@ function ActualizarCarrito() {
     Carrito = JSON.parse(localStorage.getItem('cartproducts')) || [];
     cantidadesproductos = JSON.parse(localStorage.getItem('cantproduct')) || {};
     if (Carrito.length === 0) {
-        document.getElementById('popup-cart-main').innerHTML = '<p class = "cartnulltext">El carrito está vacío</p>';
+        POPCARTMAIN.innerHTML = '<p class = "cartnulltext">El carrito está vacío</p>';
         BTNCOMPRAR.style.display = 'none';
         POPUPCARTPRICE.style.display = 'none';
         return;
@@ -143,7 +145,7 @@ function ActualizarCarrito() {
             `;
         }
     );
-    document.getElementById('popup-cart-main').innerHTML = PRODUCTOSCARRITO.join('');
+    POPCARTMAIN.innerHTML = PRODUCTOSCARRITO.join('');
     const BUTTONREMOVE = document.querySelectorAll('.button-remove');
     const INPUTCANT = document.querySelectorAll('.input-cant');
     const BTNMAYOR = document.querySelectorAll('.btnmayor');
