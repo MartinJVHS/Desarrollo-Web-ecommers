@@ -13,8 +13,6 @@ const BOTONES = ['btncatcompelec', 'btncatilumi', 'btncatindus', 'btncapasitor',
 const CATEGORIAS = [['capasitor', 'smd', 'transistor'],['celdasled', 'plafones', 'transformador'],['cableado', 'conectoralt', 'trasnformadoralt'],['capasitor'],['smd'],['transistor'],['celdasled'],['plafones'],['transformador'],['cableado'],['conectoralt'],['trasnformadoralt']];
 const TITULOS = ['COMPONENTES ELECTRONICOS', 'ILUMINACION', 'INDUSTRIAL', 'CAPASITOR', 'SMD', 'TRANSITOR', 'CELDAS LED', 'PLAFONES', 'TRANSOFRMADORES', 'CABLEADO', 'CONECOTRES DE ALTA', 'TRANSOFORMADOR DE ALTA'];
 
-
-
 var metadata = [];
 let fetchfin = false;
 let category = [];
