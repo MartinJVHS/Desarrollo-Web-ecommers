@@ -1,196 +1,2020 @@
-{
-    "productos": [
-        {
-            "id":"1",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"15"
+{ 
+  "productos": [ 
+        { 
+            "id":"1", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 1", 
+            "precio":"46",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"2", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 2", 
+            "precio":"52",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"3", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 3", 
+            "precio":"58",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"4", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 4", 
+            "precio":"36",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"5", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 5", 
+            "precio":"56",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"6", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 6", 
+            "precio":"78",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"7", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 7", 
+            "precio":"98",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"8", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 8", 
+            "precio":"50",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"9", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 9", 
+            "precio":"24",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"10", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 10", 
+            "precio":"96",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"11", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 11", 
+            "precio":"18",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"12", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 12", 
+            "precio":"3",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"13", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 13", 
+            "precio":"24",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"14", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 14", 
+            "precio":"40",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"15", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 15", 
+            "precio":"14",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"16", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 16", 
+            "precio":"94",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"17", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 17", 
+            "precio":"6",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"18", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 18", 
+            "precio":"39",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"19", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 19", 
+            "precio":"32",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"20", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 20", 
+            "precio":"17",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"21", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 21", 
+            "precio":"86",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"22", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 22", 
+            "precio":"96",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"23", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 23", 
+            "precio":"64",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"24", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 24", 
+            "precio":"99",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"25", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 25", 
+            "precio":"74",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"26", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 26", 
+            "precio":"56",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"27", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 27", 
+            "precio":"37",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"28", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 28", 
+            "precio":"78",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"29", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 29", 
+            "precio":"67",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"30", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 30", 
+            "precio":"86",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"31", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 31", 
+            "precio":"51",
+            "categoria": "condensador"
+        }, 
+        { 
+            "id":"32", 
+            "img":"/img/condensador.jpg", 
+            "titulo":"condensador Modelo 32", 
+            "precio":"62",
+            "categoria": "condensador"
         },
-        {
-            "id":"2",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"16"
+        { 
+            "id":"33", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 1", 
+            "precio":"95",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"34", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 2", 
+            "precio":"45",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"35", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 3", 
+            "precio":"2",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"36", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 4", 
+            "precio":"62",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"37", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 5", 
+            "precio":"85",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"38", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 6", 
+            "precio":"16",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"39", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 7", 
+            "precio":"20",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"40", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 8", 
+            "precio":"5",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"41", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 9", 
+            "precio":"36",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"42", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 10", 
+            "precio":"57",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"43", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 11", 
+            "precio":"66",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"44", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 12", 
+            "precio":"83",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"45", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 13", 
+            "precio":"68",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"46", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 14", 
+            "precio":"65",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"47", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 15", 
+            "precio":"50",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"48", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 16", 
+            "precio":"30",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"49", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 17", 
+            "precio":"85",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"50", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 18", 
+            "precio":"90",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"51", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 19", 
+            "precio":"81",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"52", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 20", 
+            "precio":"55",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"53", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 21", 
+            "precio":"58",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"54", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 22", 
+            "precio":"2",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"55", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 23", 
+            "precio":"91",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"56", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 24", 
+            "precio":"5",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"57", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 25", 
+            "precio":"53",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"58", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 26", 
+            "precio":"84",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"59", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 27", 
+            "precio":"15",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"60", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 28", 
+            "precio":"68",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"61", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 29", 
+            "precio":"75",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"62", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 30", 
+            "precio":"85",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"63", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 31", 
+            "precio":"10",
+            "categoria": "smd"
+        }, 
+        { 
+            "id":"64", 
+            "img":"/img/smd.jpg", 
+            "titulo":"smd Modelo 32", 
+            "precio":"54",
+            "categoria": "smd"
         },
-        {
-            "id":"3",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"17"
+        { 
+            "id":"65", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 1", 
+            "precio":"22",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"66", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 2", 
+            "precio":"36",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"67", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 3", 
+            "precio":"50",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"68", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 4", 
+            "precio":"46",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"69", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 5", 
+            "precio":"17",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"70", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 6", 
+            "precio":"1",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"71", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 7", 
+            "precio":"59",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"72", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 8", 
+            "precio":"29",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"73", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 9", 
+            "precio":"48",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"74", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 10", 
+            "precio":"90",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"75", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 11", 
+            "precio":"68",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"76", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 12", 
+            "precio":"53",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"77", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 13", 
+            "precio":"21",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"78", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 14", 
+            "precio":"91",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"79", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 15", 
+            "precio":"46",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"80", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 16", 
+            "precio":"56",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"81", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 17", 
+            "precio":"54",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"82", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 18", 
+            "precio":"72",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"83", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 19", 
+            "precio":"18",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"84", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 20", 
+            "precio":"97",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"85", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 21", 
+            "precio":"44",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"86", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 22", 
+            "precio":"84",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"87", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 23", 
+            "precio":"60",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"88", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 24", 
+            "precio":"72",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"89", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 25", 
+            "precio":"99",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"90", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 26", 
+            "precio":"73",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"91", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 27", 
+            "precio":"28",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"92", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 28", 
+            "precio":"40",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"93", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 29", 
+            "precio":"23",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"94", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 30", 
+            "precio":"13",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"95", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 31", 
+            "precio":"96",
+            "categoria": "transistor"
+        }, 
+        { 
+            "id":"96", 
+            "img":"/img/transistor.jpg", 
+            "titulo":"transistor Modelo 32", 
+            "precio":"32",
+            "categoria": "transistor"
         },
-        {
-            "id":"4",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"18"
+        { 
+            "id":"97", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 1", 
+            "precio":"63",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"98", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 2", 
+            "precio":"50",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"99", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 3", 
+            "precio":"90",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"100", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 4", 
+            "precio":"22",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"101", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 5", 
+            "precio":"83",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"102", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 6", 
+            "precio":"98",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"103", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 7", 
+            "precio":"11",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"104", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 8", 
+            "precio":"56",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"105", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 9", 
+            "precio":"31",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"106", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 10", 
+            "precio":"24",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"107", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 11", 
+            "precio":"28",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"108", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 12", 
+            "precio":"28",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"109", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 13", 
+            "precio":"14",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"110", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 14", 
+            "precio":"71",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"111", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 15", 
+            "precio":"77",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"112", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 16", 
+            "precio":"7",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"113", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 17", 
+            "precio":"89",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"114", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 18", 
+            "precio":"76",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"115", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 19", 
+            "precio":"87",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"116", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 20", 
+            "precio":"41",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"117", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 21", 
+            "precio":"77",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"118", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 22", 
+            "precio":"38",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"119", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 23", 
+            "precio":"46",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"120", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 24", 
+            "precio":"63",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"121", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 25", 
+            "precio":"82",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"122", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 26", 
+            "precio":"6",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"123", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 27", 
+            "precio":"50",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"124", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 28", 
+            "precio":"60",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"125", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 29", 
+            "precio":"68",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"126", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 30", 
+            "precio":"31",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"127", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 31", 
+            "precio":"13",
+            "categoria": "celdasled"
+        }, 
+        { 
+            "id":"128", 
+            "img":"/img/celdasled.jpg", 
+            "titulo":"celdasled Modelo 32", 
+            "precio":"8",
+            "categoria": "celdasled"
         },
-        {
-            "id":"5",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"19"
+        { 
+            "id":"129", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 1", 
+            "precio":"1",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"130", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 2", 
+            "precio":"83",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"131", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 3", 
+            "precio":"18",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"132", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 4", 
+            "precio":"85",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"133", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 5", 
+            "precio":"85",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"134", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 6", 
+            "precio":"98",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"135", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 7", 
+            "precio":"69",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"136", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 8", 
+            "precio":"12",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"137", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 9", 
+            "precio":"87",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"138", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 10", 
+            "precio":"31",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"139", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 11", 
+            "precio":"59",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"140", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 12", 
+            "precio":"28",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"141", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 13", 
+            "precio":"25",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"142", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 14", 
+            "precio":"77",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"143", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 15", 
+            "precio":"75",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"144", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 16", 
+            "precio":"41",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"145", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 17", 
+            "precio":"53",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"146", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 18", 
+            "precio":"39",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"147", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 19", 
+            "precio":"73",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"148", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 20", 
+            "precio":"49",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"149", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 21", 
+            "precio":"92",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"150", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 22", 
+            "precio":"47",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"151", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 23", 
+            "precio":"21",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"152", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 24", 
+            "precio":"53",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"153", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 25", 
+            "precio":"56",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"154", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 26", 
+            "precio":"8",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"155", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 27", 
+            "precio":"99",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"156", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 28", 
+            "precio":"62",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"157", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 29", 
+            "precio":"98",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"158", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 30", 
+            "precio":"58",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"159", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 31", 
+            "precio":"94",
+            "categoria": "plafones"
+        }, 
+        { 
+            "id":"160", 
+            "img":"/img/plafones.jpg", 
+            "titulo":"plafones Modelo 32", 
+            "precio":"10",
+            "categoria": "plafones"
         },
-        {
-            "id":"6",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"20"
+        { 
+            "id":"161", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 1", 
+            "precio":"14",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"162", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 2", 
+            "precio":"6",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"163", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 3", 
+            "precio":"47",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"164", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 4", 
+            "precio":"32",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"165", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 5", 
+            "precio":"93",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"166", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 6", 
+            "precio":"78",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"167", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 7", 
+            "precio":"48",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"168", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 8", 
+            "precio":"32",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"169", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 9", 
+            "precio":"94",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"170", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 10", 
+            "precio":"54",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"171", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 11", 
+            "precio":"20",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"172", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 12", 
+            "precio":"1",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"173", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 13", 
+            "precio":"92",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"174", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 14", 
+            "precio":"40",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"175", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 15", 
+            "precio":"4",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"176", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 16", 
+            "precio":"25",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"177", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 17", 
+            "precio":"64",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"178", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 18", 
+            "precio":"37",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"179", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 19", 
+            "precio":"43",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"180", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 20", 
+            "precio":"83",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"181", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 21", 
+            "precio":"63",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"182", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 22", 
+            "precio":"20",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"183", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 23", 
+            "precio":"18",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"184", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 24", 
+            "precio":"40",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"185", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 25", 
+            "precio":"98",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"186", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 26", 
+            "precio":"42",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"187", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 27", 
+            "precio":"43",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"188", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 28", 
+            "precio":"12",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"189", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 29", 
+            "precio":"40",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"190", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 30", 
+            "precio":"75",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"191", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 31", 
+            "precio":"30",
+            "categoria": "transformador"
+        }, 
+        { 
+            "id":"192", 
+            "img":"/img/transforamdor.jpg", 
+            "titulo":"transforamdor Modelo 32", 
+            "precio":"50",
+            "categoria": "transformador"
         },
-        {
-            "id":"7",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"15"
-        },
-        {
-            "id":"8",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"9",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"10",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"11",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"12",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"13",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"14",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"15",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"16",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"17",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {   
-            "id":"18",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {   
-            "id":"19",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"20",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"21",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"22",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"23",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"24",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"25",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"26",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"27",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"28",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"29",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"30",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"31",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        },
-        {
-            "id":"32",
-            "img":"/img/condensador.jpg",
-            "titulo":"PRODUCTO NOMBRE",
-            "precio":"******"
-        }
-    ]
-}
+        { 
+            "id":"193", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 1", 
+            "precio":"92",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"194", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 2", 
+            "precio":"100",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"195", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 3", 
+            "precio":"96",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"196", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 4", 
+            "precio":"89",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"197", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 5", 
+            "precio":"48",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"198", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 6", 
+            "precio":"45",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"199", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 7", 
+            "precio":"96",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"200", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 8", 
+            "precio":"32",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"201", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 9", 
+            "precio":"89",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"202", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 10", 
+            "precio":"77",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"203", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 11", 
+            "precio":"48",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"204", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 12", 
+            "precio":"64",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"205", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 13", 
+            "precio":"96",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"206", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 14", 
+            "precio":"52",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"207", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 15", 
+            "precio":"89",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"208", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 16", 
+            "precio":"80",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"209", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 17", 
+            "precio":"56",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"210", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 18", 
+            "precio":"85",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"211", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 19", 
+            "precio":"73",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"212", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 20", 
+            "precio":"73",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"213", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 21", 
+            "precio":"97",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"214", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 22", 
+            "precio":"56",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"215", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 23", 
+            "precio":"64",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"216", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 24", 
+            "precio":"99",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"217", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 25", 
+            "precio":"4",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"218", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 26", 
+            "precio":"81",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"219", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 27", 
+            "precio":"52",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"220", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 28", 
+            "precio":"8",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"221", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 29", 
+            "precio":"60",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"222", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 30", 
+            "precio":"13",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"223", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 31", 
+            "precio":"46",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"224", 
+            "img":"/img/cableado.jpg", 
+            "titulo":"cableado Modelo 32", 
+            "precio":"20",
+            "categoria": "cableado"
+        }, 
+        { 
+            "id":"225", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 1", 
+            "precio":"48",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"226", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 2", 
+            "precio":"84",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"227", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 3", 
+            "precio":"98",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"228", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 4", 
+            "precio":"85",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"229", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 5", 
+            "precio":"58",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"230", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 6", 
+            "precio":"92",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"231", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 7", 
+            "precio":"54",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"232", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 8", 
+            "precio":"16",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"233", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 9", 
+            "precio":"60",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"234", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 10", 
+            "precio":"30",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"235", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 11", 
+            "precio":"89",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"236", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 12", 
+            "precio":"63",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"237", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 13", 
+            "precio":"17",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"238", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 14", 
+            "precio":"58",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"239", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 15", 
+            "precio":"49",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"240", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 16", 
+            "precio":"36",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"241", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 17", 
+            "precio":"54",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"242", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 18", 
+            "precio":"72",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"243", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 19", 
+            "precio":"52",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"244", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 20", 
+            "precio":"10",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"245", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 21", 
+            "precio":"73",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"246", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 22", 
+            "precio":"12",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"247", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 23", 
+            "precio":"79",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"248", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 24", 
+            "precio":"22",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"249", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 25", 
+            "precio":"53",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"250", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 26", 
+            "precio":"73",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"251", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 27", 
+            "precio":"84",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"252", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 28", 
+            "precio":"49",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"253", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 29", 
+            "precio":"56",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"254", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 30", 
+            "precio":"65",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"255", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 31", 
+            "precio":"57",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"256", 
+            "img":"/img/conectoralt.jpg", 
+            "titulo":"conectoralt Modelo 32", 
+            "precio":"28",
+            "categoria": "conectoralt"
+        }, 
+        { 
+            "id":"257", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 1", 
+            "precio":"82",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"258", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 2", 
+            "precio":"51",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"259", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 3", 
+            "precio":"32",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"260", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 4", 
+            "precio":"12",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"261", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 5", 
+            "precio":"38",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"262", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 6", 
+            "precio":"71",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"263", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 7", 
+            "precio":"92",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"264", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 8", 
+            "precio":"100",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"265", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 9", 
+            "precio":"50",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"266", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 10", 
+            "precio":"75",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"267", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 11", 
+            "precio":"6",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"268", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 12", 
+            "precio":"79",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"269", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 13", 
+            "precio":"74",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"270", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 14", 
+            "precio":"62",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"271", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 15", 
+            "precio":"33",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"272", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 16", 
+            "precio":"46",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"273", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 17", 
+            "precio":"97",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"274", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 18", 
+            "precio":"97",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"275", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 19", 
+            "precio":"47",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"276", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 20", 
+            "precio":"85",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"277", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 21", 
+            "precio":"40",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"278", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 22", 
+            "precio":"35",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"279", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 23", 
+            "precio":"15",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"280", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 24", 
+            "precio":"17",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"281", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 25", 
+            "precio":"51",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"282", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 26", 
+            "precio":"1",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"283", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 27", 
+            "precio":"2",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"284", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 28", 
+            "precio":"63",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"285", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 29", 
+            "precio":"65",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"286", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 30", 
+            "precio":"78",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"287", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 31", 
+            "precio":"75",
+            "categoria": "trasnformadoralt"
+        }, 
+        { 
+            "id":"288", 
+            "img":"/img/trasnformadoralt.jpg", 
+            "titulo":"trasnformadoralt Modelo 32", 
+            "precio":"66",
+            "categoria": "trasnformadoralt"
+        } 
+    ] 
+} 

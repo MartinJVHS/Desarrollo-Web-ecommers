@@ -8,6 +8,7 @@ const BTNCOMPRAR = document.querySelector('.popup-cart-btn');
 const POPUPCARTPRICE = document.querySelector('.popup-cart-total');
 const TOTALPRECIO = document.getElementById('totalprecio');
 var metadata;
+let category=['smd', 'condensador'];
 let Productos = '';
 let Producto = '';
 let Carrito = [];
@@ -25,7 +26,7 @@ fetch('/json/metadata.json')
     })
     .then(data => {
         metadata = data; 
-        chargedata(metadata);
+        chargedata(metadata, category);
         verifictlocal();
     })
     .catch(error => {
@@ -33,29 +34,26 @@ fetch('/json/metadata.json')
     }
 );
 
-function chargedata(metadata)  {
+function chargedata(metadata, category)  {
     if (!localStorage.getItem('spancount')) {
         localStorage.setItem('spancount', '0');
     }
     SPANCOUNT.textContent = localStorage.getItem('spancount');
-    const SEARCHRESULT = metadata.productos.map(
-        Producto => {
-            return `
-                <div class="card-product">
-                        <div class="card-product-img">
-                            <img src="${Producto.img}" alt="Imagen del producto">
-                        </div>
-                        <div class="card-product-title-price">
-                            <a href=""><h2 class="title-product">${Producto.titulo}</h2></a>
-                            <p>Precio: $${Producto.precio}</p>
-                        </div>
-                        <div class="btn-products">
-                            <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
-                        </div>
-                </div>
-            `;
-        }
-    );
+    const SEARCHRESULT = metadata.productos.filter(Producto => category.includes(Producto.categoria)).map(Producto => { 
+        return `
+            <div class="card-product">
+                    <div class="card-product-img">
+                        <img src="${Producto.img}" alt="Imagen del producto">
+                    </div>
+                    <div class="card-product-title-price">
+                        <a href=""><h2 class="title-product">${Producto.titulo}</h2></a>
+                        <p>Precio: $${Producto.precio}</p>
+                    </div>
+                    <div class="btn-products">
+                        <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
+                    </div>
+            </div>
+    `});
     Productos = SEARCHRESULT.join('');
     document.getElementById('id-cards-products').innerHTML = Productos;
     const BUTTONSHOP = document.querySelectorAll('.button-shop');
