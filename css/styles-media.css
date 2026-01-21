@@ -1,4 +1,4 @@
-@media (max-width: 974px) {
+@media (max-width: 1010px) {
 
     .section-header{
         display: flex;
@@ -7,7 +7,7 @@
         align-items: center;
         flex-flow: row wrap;
         padding: 0;
-        margin: 0;
+        margin: 10px 0px 0px 0px;
         grid-column-gap:0px;
     }
 
@@ -16,11 +16,6 @@
         margin-right: 0;
         width: 10%;
         margin-bottom: 35px;
-    }
-
-    .container-btns-search {
-        margin-left: 8%;
-        width: 53%;    
     }
 
     .ancla-burger{
@@ -50,8 +45,8 @@
     }
 
     .logo{
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
     }
 
     .container-search {
@@ -62,11 +57,10 @@
     .search {
         border-color:#00000000;
         width: 250px;
-        height: 25px;
     }
 
     .icon-search{
-        margin-left: calc(250px - 20px);
+        margin-left: calc(250px - 30px);
     }
 
     .btn-img-search{
@@ -136,20 +130,20 @@
     .container-search {
         padding: 0;
         margin-top: 0;
+        width: 200px;
     }
 
     .search {
         width: 200px;
-        height: 25px;
     }
 
     .btns-cart{
         padding-top: 4px;
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .icon-search{
-        margin-left: calc(200px - 20px);
+        margin-left: calc(200px - 25px);
     }
 
     .btn-img-search{
@@ -331,16 +325,15 @@
 
     .search {
         width: 160px;
-        height: 25px;
     }
 
     .btns-cart{
         padding-top: 4px;
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .icon-search{
-        margin-left: calc(160px - 15px);
+        margin-left: calc(160px - 25px);
     }
     .btn-img-search{
         height: 22px;

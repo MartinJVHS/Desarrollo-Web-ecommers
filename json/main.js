@@ -11,13 +11,13 @@ const BTNABRIR = document.getElementById('btn-cart');
 const TOTALPRECIO = document.getElementById('totalprecio');
 const POPCARTMAIN = document.getElementById('popup-cart-main');
 const IDCARTPROD = document.getElementById('id-cards-products');
-const BOTONES = ['btncatcompelec', 'btncatilumi', 'btncatindus', 'btncapasitor', 'btnsmd', 'btntransi', 'btnceled', 'btnplaf', 'btntransf', 'btncabl', 'btnconectalt', 'btntransfalt'];
-const CATEGORIAS = [['capasitor', 'smd', 'transistor'],['celdasled', 'plafones', 'transformador'],['cableado', 'conectoralt', 'trasnformadoralt'],['capasitor'],['smd'],['transistor'],['celdasled'],['plafones'],['transformador'],['cableado'],['conectoralt'],['trasnformadoralt']];
-const TITULOS = ['COMPONENTES ELECTRONICOS', 'ILUMINACION', 'INDUSTRIAL', 'CAPASITOR', 'SMD', 'TRANSITOR', 'CELDAS LED', 'PLAFONES', 'TRANSOFRMADORES', 'CABLEADO', 'CONECOTRES DE ALTA', 'TRANSOFORMADOR DE ALTA'];
+const BOTONES = ['btncapasitor', 'btnsmd', 'btntransi', 'btnceled', 'btnplaf', 'btntransf', 'btncabl', 'btnconectalt', 'btntransfalt'];
+const CATEGORIAS = [['capasitor'],['smd'],['transistor'],['celdasled'],['plafones'],['transformador'],['cableado'],['conectoralt'],['trasnformadoralt']];
+const TITULOS = ['CAPASITOR', 'SMD', 'TRANSITOR', 'CELDAS LED', 'PLAFONES', 'TRANSOFRMADORES', 'CABLEADO', 'CONECOTRES DE ALTA', 'TRANSOFORMADOR DE ALTA'];
 
 var metadata = [];
 let fetchfin = false;
-let category = [];
+let category = ['capasitor'];
 let Productos = '';
 let Producto = '';
 let Carrito = [];
@@ -36,6 +36,7 @@ fetch('/json/metadata.json')
     .then(data => {
         metadata = data;
         fetchfin = true;
+        chargedata(metadata, category)
         verifictlocal();
     })
     .catch(error => {
@@ -93,6 +94,7 @@ function chargedata(metadata, category)  {
             SPANCOUNT.textContent = parseInt(JSON.parse(localStorage.getItem('spancount'))) + 1;
             localStorage.setItem('spancount', SPANCOUNT.textContent);
             ActualizarCarrito(); 
+            alert("Se agrego el producto al carrito")
         });
     });
     BTNABRIR.addEventListener('click', function() {
@@ -235,8 +237,9 @@ function sleep(milisegundos) {
 
 async function verifictlocal(){
     while(true){
-        await sleep(2000);
-        if(parseInt(SPANCOUNT.textContent) !== JSON.parse(localStorage.getItem('spancount')) || Carrito !== JSON.parse(localStorage.getItem('cartproducts')) || cantidadesproductos !== JSON.parse(localStorage.getItem('cantproduct')) ){
+        await sleep(7000);
+        if(parseInt(SPANCOUNT.textContent) !== JSON.parse(localStorage.getItem('spancount')) || JSON.stringify(Carrito) !== localStorage.getItem('cartproducts') || JSON.stringify(cantidadesproductos) !== localStorage.getItem('cantproduct') ){
+            console.log("hola")
             localStorage.setItem('spancount', SPANCOUNT.textContent);
             localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
             localStorage.setItem('cartproducts', JSON.stringify(Carrito));

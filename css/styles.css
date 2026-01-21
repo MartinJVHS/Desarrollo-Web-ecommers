@@ -16,11 +16,11 @@ aside, html, body, p, h1, h2, .bar-vertical, nav, ul, li, a{
     --color-tertiary: #db5c07;
     --color-quaternary: #7a8d69;
     --color-quinary: #4d6437;
-    --width-search-1: 435px;
+    --width-search-1: 330px;
     --color-white:#ffffff;
-    --width-card-product: 270px;
-    --width-img-product: 250px;
-    --height-img-product:250px;
+    --width-card-product: 230px;
+    --width-img-product: 200px;
+    --height-img-product:200px;
 }
 
 body{
@@ -33,26 +33,12 @@ body{
 
 .section-header{
     display:grid;
-    grid-template-columns: 1fr 1fr 1.4fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-row-gap: 0px;
     grid-column-gap: 10px;
     align-items: center;
-}
-
-.container-btns-search{
-    grid-column: 3/6;
-    grid-row: 1 / 3;
-    width: 100%;
-}
-
-.container-search{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin-top: 35px;
-    width: 100%;
+    margin-top: 10px
 }
 
 .logo-div-src{
@@ -68,6 +54,7 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-left: 5px;
 }
 
 .bar-horizontal li {
@@ -81,10 +68,11 @@ body{
     display: block;
     color:var(--color-white);
     text-align: center;
-    padding: 10px 8px;
+    padding: 0px 8px;
+    margin-top: 5px;
     text-decoration: none;
     font-weight: bold;
-    font-size: clamp(10px,calc(1vw + 10px),17px);
+    font-size: clamp(15px,calc(1vw + 4px),17px);
 }
 
 .bar-horizontal li a:hover {
@@ -93,34 +81,59 @@ body{
 }
 
 .logo-div{
-    display:block;
+    display:flex;
+    justify-content: left;
+    align-items: center;
     text-align: right;
-    grid-column-start: 2;
+    grid-column-start: 1;
+    grid-column: span 2;
+    flex-flow: row nowrap;
+    margin-left: 30px;
+}
+
+.logo-sub-div{
+    align-items: center;
+    text-align: center;
+}
+
+.container-btns-search{
+    grid-column: 3/5;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: left;
+    flex-flow: row nowrap;
+}
+
+.container-search{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: var(--width-search-1);
 }
 
 .logo{
-    margin-top: 1%;
-    width: 98px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .sfirst{
     color: var(--color-white);
-    font-size: clamp(10px,calc(2vw + 10px),26px);
+    font-size: clamp(15px,calc(1vw + 10px),24px);
     font-weight: bold;
     text-align: right;
+    margin-left: 5px;
 }
 
 .slast{
     color: var(--color-secondary);
-    font-size: clamp(10px,calc(2vw + 10px),26px);
+    font-size: clamp(15px,calc(1vw + 10px),24px);
     font-weight: bold;
     text-align: right;
 
 }
 
 .search {
-    margin-left: 7px;
     padding:3px 3px 0px 10px;
     text-decoration: none;
     outline: none;
@@ -138,7 +151,7 @@ body{
 .btns-cart{
     display: flex;
     color: #ffffff;
-    font-size: 28px;
+    font-size: 25px;
     justify-content: center;
     cursor: pointer;
     padding-left: 2%;
@@ -148,6 +161,31 @@ body{
 .btns-cart:hover{
     color: var(--color-secondary);
 }
+
+.login-div {
+    grid-column: 5 / 5;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: right;
+    flex-flow: row nowrap;
+    margin-right: 25px;
+}
+
+.btn-login{
+    display: flex;
+    color: #ffffff;
+    font-size: 25px;
+    justify-content: center;
+    cursor: pointer;
+    padding-left: 2%;
+    text-align: center;
+    width: 35px;
+}
+
+.btn-login:hover{
+    color: var(--color-secondary);
+}
+
 
 .icon-search{
     position:absolute;
@@ -168,12 +206,13 @@ body{
 .main{
     background-color: #000000;
     display:grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-column-gap: 25px;
 }
 
 .main-category{
-    justify-self:end;
+    justify-self: start;
+    margin-left:30px;
 }
 
 .nav-aside{
@@ -193,7 +232,7 @@ body{
     display: block; 
 }
 .bar-vertical li a{
-    font-size: clamp(14px,calc(1vw + 10px),24px);
+    font-size: clamp(14px,calc(1vw + 5px),17px);
     display: block;
     text-align: left;
     padding: 12px 10px;
@@ -217,7 +256,7 @@ body{
 }
 
 .bar-vertical-interior li a{
-    font-size: clamp(10px,calc(1vw + 10px),20px);
+    font-size: clamp(14px,calc(1vw + 5px),17px);
 }
 
 .bar-vertical-exterior:hover .bar-vertical-interior {
