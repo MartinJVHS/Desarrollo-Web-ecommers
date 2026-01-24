@@ -92,6 +92,8 @@ body{
 }
 
 .logo-sub-div{
+    display:flex;
+    flex-direction: row;
     align-items: center;
     text-align: center;
 }
@@ -122,7 +124,7 @@ body{
     font-size: clamp(15px,calc(1vw + 10px),24px);
     font-weight: bold;
     text-align: right;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 .slast{
@@ -134,18 +136,22 @@ body{
 }
 
 .search {
+    background: var(--color-primary);
     padding:3px 3px 0px 10px;
     text-decoration: none;
     outline: none;
     border: 0;
-    border-radius: 15px;
+    border-bottom: 2px solid var(--color-white);
     width: var(--width-search-1);
     height: 33px;
-    font-size: clamp(8px,calc(1vw + 10px),15px);
+    color: var(--color-white);
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .search::placeholder{
     font-size: clamp(8px,calc(1vw + 10px),15px);
+    color: var(--color-white);
 }
 
 .btns-cart{
@@ -189,10 +195,10 @@ body{
 
 .icon-search{
     position:absolute;
-    color: #000000;
-    font-size: clamp(12px,calc(1vw + 10px),20px);
+    color: var(--color-white);
+    font-size: 20px;
     cursor: pointer;
-    margin-left: calc(var(--width-search-1) - 30px);
+    margin-left: var(--width-search-1);
 }
 
 .icon-search:hover{

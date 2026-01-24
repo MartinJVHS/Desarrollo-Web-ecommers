@@ -215,7 +215,7 @@ function RepositionarCarrito() {
     if (FORMCARRITO.classList.contains('active')) { 
         const RECT = BTNABRIR.getBoundingClientRect();
         const RECTLOG = LOGOMOBILE.getBoundingClientRect();
-        if(!window.matchMedia("(width <= 974px)").matches){
+        if(!window.matchMedia("(width <= 1145px)").matches){
             FORMCARRITOCONTENT.style.left = `${RECT.right - FORMCARRITOCONTENT.offsetWidth}px`;
             FORMCARRITOCONTENT.style.top = `${RECT.top}px`;
         }else {

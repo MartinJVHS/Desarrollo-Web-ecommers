@@ -1,8 +1,8 @@
-@media (max-width: 1010px) {
+@media (max-width: 1145px) {
 
     .section-header{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-content: center;
         align-items: center;
         flex-flow: row wrap;
@@ -20,24 +20,20 @@
     }
 
     .menu-btns-burger{
-        display:block;
+        display:flex;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
         margin-right: 0;
         width: 10%;
-        margin-bottom: 35px;
         order: -1;
-    }
-
-    .ancla-burger{
-        position: relative;
+        margin-left: 45px;
     }
 
     .ancla-burger::before{
-        position:absolute;
         content: "\2630";
         color: var(--color-white);
-        margin-left: 15px;
-        font-size:22px;
-        margin-bottom: 20px;
+        font-size:25px;
     }
 
     .ancla-burger:hover::before{
@@ -51,6 +47,15 @@
     .logo-div-src{
         display:block;
         text-align: center;
+        
+    }
+
+    .logo-mobile-span{
+        display:flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        text-align: center;
+        margin-right:20px;
     }
 
     .logo{
@@ -58,18 +63,37 @@
         height: 70px;
     }
 
+    .sfirst, .slast {
+        font-size: 24px;
+        margin-left:0px;
+    }
+
+    .slast{
+        margin-right: 15px;
+    }
+
+
     .container-search {
         padding: 0;
         margin-top: 0;
     }
 
     .search {
-        border-color:#00000000;
+        background: var(--color-primary);
+        padding:3px 3px 0px 10px;
+        text-decoration: none;
+        outline: none;
+        border: 0;
+        border-bottom: 2px solid var(--color-white);
         width: 250px;
+        height: 33px;
+        color: var(--color-white);
+        font-size: 15px;
+        font-weight: bold;
     }
 
     .icon-search{
-        margin-left: calc(250px - 30px);
+        margin-left: 250px;
     }
 
     .btn-img-search{
@@ -85,40 +109,17 @@
 
 @media (max-width: 775px) {
 
-    .section-header{
-        align-content: center;
-        align-items: center;
-        flex-flow: row wrap;
-        gap:25px;
-    }
-
     .login-div {  
         order: -1;
         margin-right: 0;    
     }
 
+    .menu-btns-burger{
+        margin-left: 35px;
+    }
+
     .section-header-mobile{
         display: none;
-    }
-
-    .menu-btns-burger{
-        display:block;
-        margin-right: 0;
-        width: 10%;
-        margin-bottom: 30px;
-    }
-
-    .ancla-burger{
-        position: relative;
-    }
-
-   .ancla-burger::before{
-        position:absolute;
-        content: "\2630";
-        color: var(--color-white);
-        margin-left: 15px;
-        font-size:22px;
-        margin-bottom: 20px;
     }
 
     .ancla-burger:hover::before{
@@ -140,22 +141,11 @@
         gap: 15px;
     }
 
-    .logo-mobile-span{
-        flex-flow: column nowrap;
-        align-items: center;
-        text-align: center;
-    }
-
-    .logo{
-        width: 75px;
-        height: 75px;
-    }
-
     .icon-search-mobile{
         display:block;
         margin-right:25px;
         color:var(--color-white);
-        font-size: 25px;
+        font-size: 20px;
         cursor: pointer;
     }
 
@@ -172,15 +162,6 @@
         padding: 0;
         margin-top: 0;
         width: 200px;
-    }
-
-    .search {
-        width: 200px;
-    }
-
-    .btns-cart{
-        padding-top: 4px;
-        font-size: 24px;
     }
 
     .icon-search{
