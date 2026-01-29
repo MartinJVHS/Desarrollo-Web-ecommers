@@ -118,8 +118,8 @@ function ActualizarCarrito() {
         return;
     } else {
         POPUPCARTPRICE.style.display = 'block';
-        BTNCOMPRAR.style.display = 'block';;
-    }
+        BTNCOMPRAR.style.display = 'block';
+    };
     const PRODUCTOSCARRITO = Carrito.map(
         id => {
             const PRODUCTO = metadata.productos.find(p => p.id === id);
@@ -239,7 +239,6 @@ async function verifictlocal(){
     while(true){
         await sleep(7000);
         if(parseInt(SPANCOUNT.textContent) !== JSON.parse(localStorage.getItem('spancount')) || JSON.stringify(Carrito) !== localStorage.getItem('cartproducts') || JSON.stringify(cantidadesproductos) !== localStorage.getItem('cantproduct') ){
-            console.log("hola")
             localStorage.setItem('spancount', SPANCOUNT.textContent);
             localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
             localStorage.setItem('cartproducts', JSON.stringify(Carrito));
