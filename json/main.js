@@ -81,14 +81,14 @@ function chargedata(metadata, category)  {
     const BUTTONSHOP = document.querySelectorAll('.button-shop');
     BUTTONSHOP.forEach(Button => {
         Button.addEventListener('click', function() {
-            for (let i = 0; i <= Carrito.length; i++) {
-                if (Carrito[i] === Button.dataset.id) {
-                    alert('El producto ya está en el carrito');
-                    return;
+            //for (let i = 0; i <= Carrito.length; i++) {
+                if (Carrito.indexOf(Button.dataset.id) !== -1) {
+                    cantidadesproductos[Button.dataset.id] += 1;
+                } else {
+                    Carrito.push(Button.dataset.id);
+                    cantidadesproductos[Button.dataset.id] = 1;
                 }
-            }
-            Carrito.push(Button.dataset.id);
-            cantidadesproductos[Button.dataset.id] = 1;
+            // }
             localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
             localStorage.setItem('cartproducts', JSON.stringify(Carrito));
             SPANCOUNT.textContent = parseInt(JSON.parse(localStorage.getItem('spancount'))) + 1;
