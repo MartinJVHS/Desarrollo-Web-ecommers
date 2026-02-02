@@ -44,59 +44,65 @@ fetch('/json/metadata.json')
     }
 );
 
-BOTONES.forEach((Boton, index) => {
-    document.getElementById(Boton).addEventListener('click', function() {
-        if(fetchfin){
-            category = CATEGORIAS[index];
-            TITULOCATEGORIA.textContent = TITULOS[index];
-            chargedata(metadata, category);
-        }else{
-            alert("No se puedo acceder a la base de datos")
-        }
-    });
-});
-
-function chargedata(metadata, category)  {
-    if (!localStorage.getItem('spancount')) {
-        localStorage.setItem('spancount', '0');
-    }
-    SPANCOUNT.textContent = localStorage.getItem('spancount');
-    const SEARCHRESULT = metadata.productos.filter(Producto => category.includes(Producto.categoria)).map(Producto => { 
-        return `
-            <div class="card-product">
-                    <div class="card-product-img">
-                        <img src="${Producto.img}" alt="Imagen del producto">
-                    </div>
-                    <div class="card-product-title-price">
-                        <a href="#"><h2 class="title-product">${Producto.titulo}</h2></a>
-                        <p>Precio: $${Producto.precio}</p>
-                    </div>
-                    <div class="btn-products">
-                        <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
-                    </div>
-            </div>
-    `});
-    Productos = SEARCHRESULT.join('');
-    IDCARTPROD.innerHTML = Productos;
-    const BUTTONSHOP = document.querySelectorAll('.button-shop');
-    BUTTONSHOP.forEach(Button => {
-        Button.addEventListener('click', function() {
-            //for (let i = 0; i <= Carrito.length; i++) {
-                if (Carrito.indexOf(Button.dataset.id) !== -1) {
-                    cantidadesproductos[Button.dataset.id] += 1;
-                } else {
-                    Carrito.push(Button.dataset.id);
-                    cantidadesproductos[Button.dataset.id] = 1;
-                }
-            // }
-            localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
-            localStorage.setItem('cartproducts', JSON.stringify(Carrito));
-            SPANCOUNT.textContent = parseInt(JSON.parse(localStorage.getItem('spancount'))) + 1;
-            localStorage.setItem('spancount', SPANCOUNT.textContent);
-            ActualizarCarrito(); 
-            alert("Se agrego el producto al carrito")
+if (IDCARTPROD !== null) {
+    BOTONES.forEach((Boton, index) => {
+        document.getElementById(Boton).addEventListener('click', function() {
+            if(fetchfin){
+                category = CATEGORIAS[index];
+                TITULOCATEGORIA.textContent = TITULOS[index];
+                chargedata(metadata, category);
+            }else{
+                alert("No se puedo acceder a la base de datos")
+            }
         });
     });
+};
+
+function chargedata(metadata, category)  {
+    console.log(!localStorage.getItem('spancount'))
+    if (!localStorage.getItem('spancount')) {
+        localStorage.setItem('spancount', '0');
+
+    }
+    if (IDCARTPROD !== null){
+        SPANCOUNT.textContent = localStorage.getItem('spancount');
+        const SEARCHRESULT = metadata.productos.filter(Producto => category.includes(Producto.categoria)).map(Producto => { 
+            return `
+                <div class="card-product">
+                        <div class="card-product-img">
+                            <img src="${Producto.img}" alt="Imagen del producto">
+                        </div>
+                        <div class="card-product-title-price">
+                            <a href="#"><h2 class="title-product">${Producto.titulo}</h2></a>
+                            <p>Precio: $${Producto.precio}</p>
+                        </div>
+                        <div class="btn-products">
+                            <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
+                        </div>
+                </div>
+        `});
+        Productos = SEARCHRESULT.join('');
+        IDCARTPROD.innerHTML = Productos;
+        const BUTTONSHOP = document.querySelectorAll('.button-shop');
+        BUTTONSHOP.forEach(Button => {
+            Button.addEventListener('click', function() {
+                //for (let i = 0; i <= Carrito.length; i++) {
+                    if (Carrito.indexOf(Button.dataset.id) !== -1) {
+                        cantidadesproductos[Button.dataset.id] += 1;
+                    } else {
+                        Carrito.push(Button.dataset.id);
+                        cantidadesproductos[Button.dataset.id] = 1;
+                    }
+                // }
+                localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
+                localStorage.setItem('cartproducts', JSON.stringify(Carrito));
+                SPANCOUNT.textContent = parseInt(JSON.parse(localStorage.getItem('spancount'))) + 1;
+                localStorage.setItem('spancount', SPANCOUNT.textContent);
+                ActualizarCarrito(); 
+                alert("Se agrego el producto al carrito")
+            });
+        });
+    };
     BTNABRIR.addEventListener('click', function() {
         FORMCARRITO.classList.add('active');
         const RECT = BTNABRIR.getBoundingClientRect();
@@ -111,6 +117,7 @@ function chargedata(metadata, category)  {
 function ActualizarCarrito() {
     Carrito = JSON.parse(localStorage.getItem('cartproducts')) || [];
     cantidadesproductos = JSON.parse(localStorage.getItem('cantproduct')) || {};
+    SPANCOUNT.textContent = parseInt(JSON.parse(localStorage.getItem('spancount'))) || 0;
     if (Carrito.length === 0) {
         POPCARTMAIN.innerHTML = '<p class = "cartnulltext">El carrito está vacío</p>';
         BTNCOMPRAR.style.display = 'none';
@@ -196,7 +203,7 @@ function ModificarCantidadProducto(Button, index, inputcant) {
     localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
     localStorage.setItem('cartproducts', JSON.stringify(Carrito));
     PrecioTotal();
-}
+};
 
 function PrecioTotal() {
     totalprice = 0;
@@ -209,7 +216,7 @@ function PrecioTotal() {
         }
     );
     TOTALPRECIO.textContent = totalprice;
-}
+};
 
 function RepositionarCarrito() {
     if (FORMCARRITO.classList.contains('active')) { 
@@ -223,7 +230,7 @@ function RepositionarCarrito() {
             FORMCARRITOCONTENT.style.top = `${RECT.top}px`;
         }
     }
-}
+};
 
 FORMCARRITO.addEventListener('click', function(event) {
     if (event.target === FORMCARRITO) {
@@ -233,18 +240,21 @@ FORMCARRITO.addEventListener('click', function(event) {
 
 function sleep(milisegundos) {
   return new Promise(resolve => setTimeout(resolve, milisegundos));
-}
+};
 
 async function verifictlocal(){
     while(true){
         await sleep(7000);
         if(parseInt(SPANCOUNT.textContent) !== JSON.parse(localStorage.getItem('spancount')) || JSON.stringify(Carrito) !== localStorage.getItem('cartproducts') || JSON.stringify(cantidadesproductos) !== localStorage.getItem('cantproduct') ){
-            localStorage.setItem('spancount', SPANCOUNT.textContent);
+            console.log("hola");
+            if (JSON.parse(localStorage.getItem('spancount')) < parseInt(SPANCOUNT.textContent)){
+                localStorage.setItem('spancount', SPANCOUNT.textContent);
+            };
             localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
             localStorage.setItem('cartproducts', JSON.stringify(Carrito));
             ActualizarCarrito();
-        }
-    }
-}
+        };
+    };
+};
 
 window.addEventListener('resize', RepositionarCarrito);
