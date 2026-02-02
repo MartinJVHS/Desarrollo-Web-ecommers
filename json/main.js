@@ -11,6 +11,7 @@ const BTNABRIR = document.getElementById('btn-cart');
 const TOTALPRECIO = document.getElementById('totalprecio');
 const POPCARTMAIN = document.getElementById('popup-cart-main');
 const IDCARTPROD = document.getElementById('id-cards-products');
+const CARRUSELL = document.getElementById('carouselcategoria');
 const BOTONES = ['btncapasitor', 'btnsmd', 'btntransi', 'btnceled', 'btnplaf', 'btntransf', 'btncabl', 'btnconectalt', 'btntransfalt'];
 const CATEGORIAS = [['capasitor'],['smd'],['transistor'],['celdasled'],['plafones'],['transformador'],['cableado'],['conectoralt'],['trasnformadoralt']];
 const TITULOS = ['CAPASITOR', 'SMD', 'TRANSITOR', 'CELDAS LED', 'PLAFONES', 'TRANSOFRMADORES', 'CABLEADO', 'CONECOTRES DE ALTA', 'TRANSOFORMADOR DE ALTA'];
@@ -43,6 +44,12 @@ fetch('/json/metadata.json')
         console.error("Error al cargar los metadatos:", error);
     }
 );
+
+if (CARRUSELL !== null){
+    const CAROUSEL = new bootstrap.Carousel(CARRUSELL, {
+        interval: 2000
+    });
+};
 
 if (IDCARTPROD !== null) {
     BOTONES.forEach((Boton, index) => {

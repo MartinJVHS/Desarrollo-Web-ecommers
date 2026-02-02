@@ -368,15 +368,16 @@ body{
 }
 
 #carouselcategoria{
+    width: 140vh;
     height: 60vh;
     overflow: hidden;
 }
 
-.carousel-inner, .carousel-item {
+#carouselcategoria .carousel-inner, #carouselcategoria .carousel-item {
     height: 100%;
 }
 
-.carousel-item img {
+#carouselcategoria .carousel-item img {
     height: 100%;
     object-fit: cover; 
 }
