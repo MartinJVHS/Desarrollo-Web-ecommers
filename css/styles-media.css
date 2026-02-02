@@ -107,7 +107,7 @@
 
 }
 
-@media (max-width: 775px) {
+@media (max-width: 767px) {
 
     .login-div {  
         order: -1;
@@ -156,7 +156,6 @@
     .container-search {
         display:none;
     }
-
 
     .search {
         padding: 0;
@@ -293,6 +292,15 @@
 
     .card-product-title-price, .card-product-title-price p{
         text-align: center;
+    }
+
+    .carousel-indicators{
+        background: rgba(0, 0, 0, 0.7);
+        width: 30%;
+        margin-right: 450px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        left: 22%;
     }
 
     .popup-cart-content{

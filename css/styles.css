@@ -367,6 +367,26 @@ body{
     color: var(--color-secondary);
 }
 
+#carouselcategoria{
+    height: 60vh;
+    overflow: hidden;
+}
+
+.carousel-inner, .carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; 
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 5px;
+    border-radius: 5px;
+}
+
 .popup-cart-bg{
     display: none;
     position: fixed;
