@@ -12,6 +12,9 @@ const TOTALPRECIO = document.getElementById('totalprecio');
 const POPCARTMAIN = document.getElementById('popup-cart-main');
 const IDCARTPROD = document.getElementById('id-cards-products');
 const CARRUSELL = document.getElementById('carouselcategoria');
+const TEXTALERT = document.getElementById('alertext');
+const FLOATALERT = document.getElementById('floatalert');
+const CLOSEALERT = document.getElementById('closealert');
 const BOTONES = ['btncapasitor', 'btnsmd', 'btntransi', 'btnceled', 'btnplaf', 'btntransf', 'btncabl', 'btnconectalt', 'btntransfalt'];
 const CATEGORIAS = [['capasitor'],['smd'],['transistor'],['celdasled'],['plafones'],['transformador'],['cableado'],['conectoralt'],['trasnformadoralt']];
 const TITULOS = ['CAPASITOR', 'SMD', 'TRANSITOR', 'CELDAS LED', 'PLAFONES', 'TRANSOFRMADORES', 'CABLEADO', 'CONECOTRES DE ALTA', 'TRANSOFORMADOR DE ALTA'];
@@ -99,6 +102,7 @@ function chargedata(metadata, category)  {
                     } else {
                         Carrito.push(Button.dataset.id);
                         cantidadesproductos[Button.dataset.id] = 1;
+                        alerta('Se agrego el producto al carrito')
                     }
                 // }
                 localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
@@ -211,6 +215,17 @@ function ModificarCantidadProducto(Button, index, inputcant) {
     localStorage.setItem('cartproducts', JSON.stringify(Carrito));
     PrecioTotal();
 };
+
+function alerta(mensaje){
+    if (TEXTALERT !== null){
+        TEXTALERT.textContent = mensaje;
+        FLOATALERT.style.display = 'block';
+    }
+}
+
+CLOSEALERT.addEventListener('click', function() {
+    FLOATALERT.style.display = 'none';
+});
 
 function PrecioTotal() {
     totalprice = 0;

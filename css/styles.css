@@ -615,3 +615,68 @@ body{
 .id-cards-products{
     margin-bottom: 15px;
 }
+
+.alertfloat{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    overflow-y: auto;
+    justify-content: end;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 40%;
+}
+
+.alertfloat div{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    padding-right: 20px;
+}
+
+.alertfloat div p{
+    font-size: 20px;
+}
+
+.alertfloat div span{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+/* .btn-animado {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative; /* Necesario para posicionar la barra */
+
+/*  padding: 10px 5px;
+  color: #333;
+}
+
+/* Creamos la barra con un pseudo-elemento */
+/* .btn-animado::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #3498db; /* Color de la barra */
+  
+  /* Estado inicial: invisible y encogida */
+/*  transform: scaleX(1);
+  transform-origin: bottom right;
+  transition: transform 2s ease-out;
+}*/
+
+/* Efecto al pasar el mouse */
+/*.btn-animado:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+} */
