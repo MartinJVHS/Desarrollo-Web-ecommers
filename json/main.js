@@ -80,7 +80,8 @@ function chargedata(metadata, category)  {
         }
 
         BOTONES.forEach((Boton, index) => {
-            document.getElementById(Boton).addEventListener('click', function() {
+            document.getElementById(Boton).addEventListener('click', function(event) {
+                event.preventDefault();
                 category = CATEGORIAS[index];
                 TITULOCATEGORIA.textContent = TITULOS[index];
                 chargedata(metadata, category);
@@ -119,56 +120,17 @@ function Createcards(diveable, metadata, category, searching){
     SPANCOUNT.textContent = localStorage.getItem('spancount');
     if (category.length > 0){
         const SEARCHRESULT = metadata.productos.filter(Producto => category.includes(Producto.categoria)).map(Producto => { 
-            return `
-                <div class="card-product">
-                    <div class="card-product-img">
-                        <img src="${Producto.img}" alt="Imagen del producto">
-                    </div>
-                    <div class="card-product-title-price">
-                        <a href="#"><h2 class="title-product">${Producto.titulo}</h2></a>
-                        <p>Precio: $${Producto.precio}</p>
-                    </div>
-                    <div class="btn-products">
-                        <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
-                    </div>
-                </div>
-        `});
+            return createcardtag(Producto) });
         Productos = SEARCHRESULT.join('');
-    } else if (category.length === 0) {
+    } else if (category.length === 0 && searching.value.trim() !== '') {
         search = searching.value.toLowerCase();
         const SEARCHRESULT = metadata.productos.filter(Producto => Producto.titulo.toLowerCase().includes(search)).map(Producto => { 
-            return `
-                <div class="card-product">
-                    <div class="card-product-img">
-                        <img src="${Producto.img}" alt="Imagen del producto">
-                    </div>
-                    <div class="card-product-title-price">
-                        <a href="#"><h2 class="title-product">${Producto.titulo}</h2></a>
-                        <p>Precio: $${Producto.precio}</p>
-                    </div>
-                    <div class="btn-products">
-                        <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
-                    </div>
-                </div>
-        `});
+            return createcardtag(Producto) });
         Productos = SEARCHRESULT.join('');
         TITULOCATEGORIA.textContent = 'RESULTADO DE: ' + searching.value; 
     } else if (searching.value === '') {
         const SEARCHRESULT = metadata.productos.map(Producto => { 
-            return `
-            <div class="card-product">
-                <div class="card-product-img">
-                    <img src="${Producto.img}" alt="Imagen del producto">
-                </div>
-                <div class="card-product-title-price">
-                    <a href="#"><h2 class="title-product">${Producto.titulo}</h2></a>
-                    <p>Precio: $${Producto.precio}</p>
-                </div>
-                <div class="btn-products">
-                    <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
-                </div>
-            </div>
-        `});
+            return createcardtag(Producto) });
         Productos = SEARCHRESULT.join('');
         TITULOCATEGORIA.textContent = 'TODOS LOS PRODUCTOS'; 
     };
@@ -196,6 +158,22 @@ function Createcards(diveable, metadata, category, searching){
         });
     });
 };
+
+function createcardtag(Prod){
+    return `
+    <div class="card-product">
+        <div class="card-product-img">
+            <img src="${Prod.img}" alt="Imagen del producto">
+        </div>
+        <div class="card-product-title-price">
+            <a href="#"><h2 class="title-product">${Prod.titulo}</h2></a>
+            <p>Precio: $${Prod.precio}</p>
+        </div>
+        <div class="btn-products">
+            <button class="button-shop" type="button" data-id=${Prod.id}>COMPRAR</button>
+        </div>
+    </div>
+`}
 
 function ActualizarCarrito() {
     Carrito = JSON.parse(localStorage.getItem('cartproducts')) || [];
