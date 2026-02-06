@@ -1,3 +1,5 @@
+const PAGINACTUAL = window.location.pathname;
+
 const FORMCARRITOCONTENT = document.querySelector('.popup-cart-content');
 const BTNCERRAR = document.querySelector('.popup-cart-close');
 const BTNCOMPRAR = document.querySelector('.popup-cart-btn');
@@ -15,12 +17,12 @@ const CARRUSELL = document.getElementById('carouselcategoria');
 const TEXTALERT = document.getElementById('alertext');
 const FLOATALERT = document.getElementById('floatalert');
 const CLOSEALERT = document.getElementById('closealert');
+const SEARCHINPUT= document.getElementById('searchinput');
 const BOTONES = ['btncapasitor', 'btnsmd', 'btntransi', 'btnceled', 'btnplaf', 'btntransf', 'btncabl', 'btnconectalt', 'btntransfalt'];
 const CATEGORIAS = [['capasitor'],['smd'],['transistor'],['celdasled'],['plafones'],['transformador'],['cableado'],['conectoralt'],['trasnformadoralt']];
 const TITULOS = ['CAPASITOR', 'SMD', 'TRANSITOR', 'CELDAS LED', 'PLAFONES', 'TRANSOFRMADORES', 'CABLEADO', 'CONECOTRES DE ALTA', 'TRANSOFORMADOR DE ALTA'];
 
-var metadata = [];
-let fetchfin = false;
+let metadata = [];
 let category = ['capasitor'];
 let Productos = '';
 let Producto = '';
@@ -29,6 +31,7 @@ let cantidadesproductos = {};
 let currentValue = 0;
 let totalprice = 0;
 let product = {};
+let search = '';
 
 fetch('/json/metadata.json')
     .then(response => {
@@ -39,7 +42,6 @@ fetch('/json/metadata.json')
     })
     .then(data => {
         metadata = data;
-        fetchfin = true;
         chargedata(metadata, category)
         verifictlocal();
     })
@@ -54,66 +56,48 @@ if (CARRUSELL !== null){
     });
 };
 
-if (IDCARTPROD !== null) {
-    BOTONES.forEach((Boton, index) => {
-        document.getElementById(Boton).addEventListener('click', function() {
-            if(fetchfin){
+function chargedata(metadata, category)  {
+    if (!localStorage.getItem('spancount')) {
+        localStorage.setItem('spancount', '0');
+    }
+
+    if (IDCARTPROD !== null){
+
+        SEARCHINPUT.addEventListener('input', function() {
+            category = [];
+            Createcards(IDCARTPROD, metadata, category, SEARCHINPUT);
+        });
+
+        const PARAMETROS = new URLSearchParams(window.location.search);
+        const QUERY = PARAMETROS.get('query');
+
+        if (QUERY !== null) {
+            SEARCHINPUT.value = QUERY;
+            category = [];
+            Createcards(IDCARTPROD, metadata, category, SEARCHINPUT);
+        } else {
+            Createcards(IDCARTPROD, metadata, category);
+        }
+
+        BOTONES.forEach((Boton, index) => {
+            document.getElementById(Boton).addEventListener('click', function() {
                 category = CATEGORIAS[index];
                 TITULOCATEGORIA.textContent = TITULOS[index];
                 chargedata(metadata, category);
-            }else{
-                alert("No se puedo acceder a la base de datos")
-            }
-        });
-    });
-};
-
-function chargedata(metadata, category)  {
-    console.log(!localStorage.getItem('spancount'))
-    if (!localStorage.getItem('spancount')) {
-        localStorage.setItem('spancount', '0');
-
-    }
-    if (IDCARTPROD !== null){
-        SPANCOUNT.textContent = localStorage.getItem('spancount');
-        const SEARCHRESULT = metadata.productos.filter(Producto => category.includes(Producto.categoria)).map(Producto => { 
-            return `
-                <div class="card-product">
-                        <div class="card-product-img">
-                            <img src="${Producto.img}" alt="Imagen del producto">
-                        </div>
-                        <div class="card-product-title-price">
-                            <a href="#"><h2 class="title-product">${Producto.titulo}</h2></a>
-                            <p>Precio: $${Producto.precio}</p>
-                        </div>
-                        <div class="btn-products">
-                            <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
-                        </div>
-                </div>
-        `});
-        Productos = SEARCHRESULT.join('');
-        IDCARTPROD.innerHTML = Productos;
-        const BUTTONSHOP = document.querySelectorAll('.button-shop');
-        BUTTONSHOP.forEach(Button => {
-            Button.addEventListener('click', function() {
-                //for (let i = 0; i <= Carrito.length; i++) {
-                    if (Carrito.indexOf(Button.dataset.id) !== -1) {
-                        cantidadesproductos[Button.dataset.id] += 1;
-                    } else {
-                        Carrito.push(Button.dataset.id);
-                        cantidadesproductos[Button.dataset.id] = 1;
-                        alerta('Se agrego el producto al carrito')
-                    }
-                // }
-                localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
-                localStorage.setItem('cartproducts', JSON.stringify(Carrito));
-                SPANCOUNT.textContent = parseInt(JSON.parse(localStorage.getItem('spancount'))) + 1;
-                localStorage.setItem('spancount', SPANCOUNT.textContent);
-                ActualizarCarrito(); 
-                alert("Se agrego el producto al carrito")
             });
         });
+
+    } else {
+        SEARCHINPUT.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                const valor = SEARCHINPUT.value.trim();
+                if (valor !== "") {
+                    window.location.href = `product.html?query=${encodeURIComponent(valor)}`;
+                }
+            }
+        });        
     };
+
     BTNABRIR.addEventListener('click', function() {
         FORMCARRITO.classList.add('active');
         const RECT = BTNABRIR.getBoundingClientRect();
@@ -122,7 +106,95 @@ function chargedata(metadata, category)  {
     BTNCERRAR.addEventListener('click', function() {
         FORMCARRITO.classList.remove('active');
     });
+
+    SEARCHINPUT.addEventListener('input', function() {
+            category = [];
+            Createcards(IDCARTPROD, metadata, category, SEARCHINPUT);
+    });
+
     ActualizarCarrito();    
+};
+
+function Createcards(diveable, metadata, category, searching){
+    SPANCOUNT.textContent = localStorage.getItem('spancount');
+    if (category.length > 0){
+        const SEARCHRESULT = metadata.productos.filter(Producto => category.includes(Producto.categoria)).map(Producto => { 
+            return `
+                <div class="card-product">
+                    <div class="card-product-img">
+                        <img src="${Producto.img}" alt="Imagen del producto">
+                    </div>
+                    <div class="card-product-title-price">
+                        <a href="#"><h2 class="title-product">${Producto.titulo}</h2></a>
+                        <p>Precio: $${Producto.precio}</p>
+                    </div>
+                    <div class="btn-products">
+                        <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
+                    </div>
+                </div>
+        `});
+        Productos = SEARCHRESULT.join('');
+    } else if (category.length === 0) {
+        search = searching.value.toLowerCase();
+        const SEARCHRESULT = metadata.productos.filter(Producto => Producto.titulo.toLowerCase().includes(search)).map(Producto => { 
+            return `
+                <div class="card-product">
+                    <div class="card-product-img">
+                        <img src="${Producto.img}" alt="Imagen del producto">
+                    </div>
+                    <div class="card-product-title-price">
+                        <a href="#"><h2 class="title-product">${Producto.titulo}</h2></a>
+                        <p>Precio: $${Producto.precio}</p>
+                    </div>
+                    <div class="btn-products">
+                        <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
+                    </div>
+                </div>
+        `});
+        Productos = SEARCHRESULT.join('');
+        TITULOCATEGORIA.textContent = 'RESULTADO DE: ' + searching.value; 
+    } else if (searching.value === '') {
+        const SEARCHRESULT = metadata.productos.map(Producto => { 
+            return `
+            <div class="card-product">
+                <div class="card-product-img">
+                    <img src="${Producto.img}" alt="Imagen del producto">
+                </div>
+                <div class="card-product-title-price">
+                    <a href="#"><h2 class="title-product">${Producto.titulo}</h2></a>
+                    <p>Precio: $${Producto.precio}</p>
+                </div>
+                <div class="btn-products">
+                    <button class="button-shop" type="button" data-id=${Producto.id}>COMPRAR</button>
+                </div>
+            </div>
+        `});
+        Productos = SEARCHRESULT.join('');
+        TITULOCATEGORIA.textContent = 'TODOS LOS PRODUCTOS'; 
+    };
+    if (Productos.length > 0) {
+        diveable.innerHTML = Productos;
+    } else {
+        TITULOCATEGORIA.textContent = 'No hay resultado';
+        diveable.innerHTML = '';
+    }
+    const BUTTONSHOP = document.querySelectorAll('.button-shop');
+    BUTTONSHOP.forEach(Button => {
+        Button.addEventListener('click', function() {
+                if (Carrito.indexOf(Button.dataset.id) !== -1) {
+                    cantidadesproductos[Button.dataset.id] += 1;
+                } else {
+                    Carrito.push(Button.dataset.id);
+                    cantidadesproductos[Button.dataset.id] = 1;
+                    alerta('Se agrego el producto al carrito')
+                }
+            localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
+            localStorage.setItem('cartproducts', JSON.stringify(Carrito));
+            SPANCOUNT.textContent = parseInt(JSON.parse(localStorage.getItem('spancount'))) + 1;
+            localStorage.setItem('spancount', SPANCOUNT.textContent);
+            ActualizarCarrito(); 
+        });
+    });
 };
 
 function ActualizarCarrito() {

@@ -197,7 +197,6 @@ body{
     position:absolute;
     color: var(--color-white);
     font-size: 20px;
-    cursor: pointer;
     margin-left: var(--width-search-1);
 }
 
