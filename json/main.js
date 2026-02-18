@@ -6,6 +6,9 @@ const BTNCOMPRAR = document.querySelector('.popup-cart-btn');
 const POPUPCARTPRICE = document.querySelector('.popup-cart-total');
 const TITULOCATEGORIA = document.querySelector('.title-category');
 
+const CAROUSELPRIMESP = document.getElementById('casouselprimerespacio');
+const CAROUSELSECESP = document.getElementById('casouselsegundoespacio');
+const CAROUSELTRIESP = document.getElementById('casouseltercerespacio');
 const LOGOMOBILE = document.getElementById('logo-mobile');
 const FORMCARRITO = document.getElementById('popup-form');
 const SPANCOUNT = document.getElementById('CantCartProd');
@@ -32,6 +35,7 @@ let currentValue = 0;
 let totalprice = 0;
 let product = {};
 let search = '';
+let cantproductest = 0;
 
 fetch('/json/metadata.json')
     .then(response => {
@@ -61,6 +65,10 @@ function chargedata(metadata, category)  {
         localStorage.setItem('spancount', '0');
     }
 
+    if (CAROUSELPRIMESP !== null){
+
+        
+    }
     if (IDCARTPROD !== null){
 
         SEARCHINPUT.addEventListener('input', function() {
@@ -69,7 +77,7 @@ function chargedata(metadata, category)  {
         });
 
         const PARAMETROS = new URLSearchParams(window.location.search);
-        const QUERY = PARAMETROS.get('query');
+        const QUERY = PARAMETROS.get('search');
 
         if (QUERY !== null) {
             SEARCHINPUT.value = QUERY;
@@ -93,7 +101,7 @@ function chargedata(metadata, category)  {
             if (event.key === 'Enter') {
                 const valor = SEARCHINPUT.value.trim();
                 if (valor !== "") {
-                    window.location.href = `product.html?query=${encodeURIComponent(valor)}`;
+                    window.location.href = `product.html?search=${encodeURIComponent(valor)}`;
                 }
             }
         });        
@@ -171,6 +179,18 @@ function createcardtag(Prod){
         </div>
         <div class="btn-products">
             <button class="button-shop" type="button" data-id=${Prod.id}>COMPRAR</button>
+        </div>
+    </div>
+`}
+
+function createcardcarousel(Prod){
+    return `
+    <div class="card m-2" style="width: 18rem;">
+        <img src="${Prod.img}"class="card-img-top" alt="Imagen del producto">
+        <div class="card-body">
+            <h5 class="card-title">${Prod.titulo}</h5>
+            <p class="card-text">$${Prod.precio}</p>
+            <button class="button-shop-carousel" type="button" data-id=${Prod.id}>COMPRAR</button>
         </div>
     </div>
 `}
@@ -316,12 +336,20 @@ function sleep(milisegundos) {
 
 async function verifictlocal(){
     while(true){
-        await sleep(7000);
-        if(parseInt(SPANCOUNT.textContent) !== JSON.parse(localStorage.getItem('spancount')) || JSON.stringify(Carrito) !== localStorage.getItem('cartproducts') || JSON.stringify(cantidadesproductos) !== localStorage.getItem('cantproduct') ){
-            console.log("hola");
-            if (JSON.parse(localStorage.getItem('spancount')) < parseInt(SPANCOUNT.textContent)){
-                localStorage.setItem('spancount', SPANCOUNT.textContent);
-            };
+        await sleep(8000);
+        Carrito.forEach(producto => {
+            if (Carrito != [] && cantidadesproductos != []) {
+                cantproductest = cantproductest + cantidadesproductos[producto]; 
+            } else {
+                cantproductest = 0;
+            }
+        }); 
+        if (cantproductest != JSON.parse(localStorage.getItem('spancount'))){
+            localStorage.setItem('spancount', cantproductest);
+            SPANCOUNT.textContent = cantproductest
+        }
+        cantproductest = 0;
+        if (JSON.stringify(Carrito) !== localStorage.getItem('cartproducts') || JSON.stringify(cantidadesproductos) !== localStorage.getItem('cantproduct') ){
             localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
             localStorage.setItem('cartproducts', JSON.stringify(Carrito));
             ActualizarCarrito();
