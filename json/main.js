@@ -36,6 +36,7 @@ let totalprice = 0;
 let product = {};
 let search = '';
 let cantproductest = 0;
+let espaciorandom = 0;
 
 fetch('/json/metadata.json')
     .then(response => {
@@ -66,8 +67,7 @@ function chargedata(metadata, category)  {
     }
 
     if (CAROUSELPRIMESP !== null){
-
-        
+        Createcardscarousel(metadata);
     }
     if (IDCARTPROD !== null){
 
@@ -166,6 +166,33 @@ function Createcards(diveable, metadata, category, searching){
         });
     });
 };
+
+function Createcardscarousel(metadata){
+    espaciorandom = Math.floor(Math.random() * (8 - 0 + 1)) + 0;
+    
+    for (i=0;i<5;i++){
+        console.log(TITULOS[espaciorandom].toLowerCase() === metadata.productos[i].categoria);
+        console.log(metadata.productos[i]);
+    }
+    /*const BUTTONSHOP = document.querySelectorAll('.button-shop-carousel');
+    BUTTONSHOP.forEach(Button => {
+        Button.addEventListener('click', function() {
+                if (Carrito.indexOf(Button.dataset.id) !== -1) {
+                    cantidadesproductos[Button.dataset.id] += 1;
+                } else {
+                    Carrito.push(Button.dataset.id);
+                    cantidadesproductos[Button.dataset.id] = 1;
+                    alerta('Se agrego el producto al carrito')
+                }
+            localStorage.setItem('cantproduct', JSON.stringify(cantidadesproductos));
+            localStorage.setItem('cartproducts', JSON.stringify(Carrito));
+            SPANCOUNT.textContent = parseInt(JSON.parse(localStorage.getItem('spancount'))) + 1;
+            localStorage.setItem('spancount', SPANCOUNT.textContent);
+            ActualizarCarrito(); 
+        });
+    });*/
+};
+
 
 function createcardtag(Prod){
     return `
