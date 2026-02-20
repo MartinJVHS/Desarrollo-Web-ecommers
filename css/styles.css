@@ -387,6 +387,35 @@ body{
     object-fit: cover; 
 }
 
+#productCarousel{
+    width: 140vh;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#productCarousel .carousel-inner, #productCarousel .carousel-item {
+    height: 100%;
+}
+
+#productCarousel .carousel-item img {
+    height: 100%;
+    object-fit: contain; 
+   
+}
+
+#productCarousel .card{
+    height: 330px;
+}
+
+.card-body{
+    margin-left:-5px;
+}
+
+#productCarousel{
+    margin-bottom: 15px;
+    margin-top:15px;
+}
+
 .carousel-caption {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px 5px;
@@ -530,7 +559,12 @@ body{
     display: block;
 }
 
-.button-shop{
+#productCarousel .carousel-control-next,#productCarousel .carousel-control-prev{
+    width: 25px;
+    height: 300px;
+}
+
+.button-shop, .button-shop-carousel{
     background-color: var(--color-secondary);
     color: var(--color-white);
     border: none;
@@ -542,7 +576,7 @@ body{
     margin-bottom: 4px;
 }
 
-.button-shop:hover{
+.button-shop:hover, .button-shop-carousel:hover{
     background-color: var(--color-tertiary);
 }
 

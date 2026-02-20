@@ -24,6 +24,7 @@ const SEARCHINPUT= document.getElementById('searchinput');
 const BOTONES = ['btncapasitor', 'btnsmd', 'btntransi', 'btnceled', 'btnplaf', 'btntransf', 'btncabl', 'btnconectalt', 'btntransfalt'];
 const CATEGORIAS = [['capasitor'],['smd'],['transistor'],['celdasled'],['plafones'],['transformador'],['cableado'],['conectoralt'],['trasnformadoralt']];
 const TITULOS = ['CAPASITOR', 'SMD', 'TRANSITOR', 'CELDAS LED', 'PLAFONES', 'TRANSOFRMADORES', 'CABLEADO', 'CONECOTRES DE ALTA', 'TRANSOFORMADOR DE ALTA'];
+const ESPCAROUSEL = [CAROUSELPRIMESP, CAROUSELSECESP, CAROUSELTRIESP];
 
 let metadata = [];
 let category = ['capasitor'];
@@ -36,7 +37,10 @@ let totalprice = 0;
 let product = {};
 let search = '';
 let cantproductest = 0;
+let categoryrandom = [];
 let espaciorandom = 0;
+let espaciorandomanterior = [];
+let carruselfinalresult = [];
 
 fetch('/json/metadata.json')
     .then(response => {
@@ -141,6 +145,7 @@ function Createcards(diveable, metadata, category, searching){
             return createcardtag(Producto) });
         Productos = SEARCHRESULT.join('');
         TITULOCATEGORIA.textContent = 'TODOS LOS PRODUCTOS'; 
+        console.log(Productos);
     };
     if (Productos.length > 0) {
         diveable.innerHTML = Productos;
@@ -168,13 +173,26 @@ function Createcards(diveable, metadata, category, searching){
 };
 
 function Createcardscarousel(metadata){
-    espaciorandom = Math.floor(Math.random() * (8 - 0 + 1)) + 0;
-    
-    for (i=0;i<5;i++){
-        console.log(TITULOS[espaciorandom].toLowerCase() === metadata.productos[i].categoria);
-        console.log(metadata.productos[i]);
+    for(f=0;f<3;f++){
+        espaciorandom = Math.floor(Math.random() * (8 - 0 + 1)) + 0;
+        if (espaciorandomanterior.length !== 0){
+            while (espaciorandomanterior.includes(espaciorandom)){
+                espaciorandom = Math.floor(Math.random() * (8 - 0 + 1)) + 0
+            }
+        }
+        categoryrandom = CATEGORIAS[espaciorandom]
+        const RESULT = metadata.productos.filter(Producto => categoryrandom.includes(Producto.categoria));
+        for (i=0;(i<5);i++){
+            carruselfinalresult.push(createcardcarousel(RESULT[i]));
+        }
+        Producto = carruselfinalresult.join('');
+        ESPCAROUSEL[f].innerHTML = Producto;
+        carruselfinalresult = [];
+        espaciorandomanterior.push(espaciorandom);
+        console.log(validadcion(espaciorandom, espaciorandomanterior));
     }
-    /*const BUTTONSHOP = document.querySelectorAll('.button-shop-carousel');
+    console.log(validadcion(espaciorandom, espaciorandomanterior));
+    const BUTTONSHOP = document.querySelectorAll('.button-shop-carousel');
     BUTTONSHOP.forEach(Button => {
         Button.addEventListener('click', function() {
                 if (Carrito.indexOf(Button.dataset.id) !== -1) {
@@ -190,8 +208,19 @@ function Createcardscarousel(metadata){
             localStorage.setItem('spancount', SPANCOUNT.textContent);
             ActualizarCarrito(); 
         });
-    });*/
-};
+    });
+}
+
+function validadcion(vxar, tabla){
+    for(k=0;k<tabla.length;k++){
+        if (tabla[k] == vxar){
+            console.log(tabla[k]);
+            return true;
+        }
+        console.log(tabla[k]);
+        return false
+    }
+}
 
 
 function createcardtag(Prod){
@@ -212,11 +241,11 @@ function createcardtag(Prod){
 
 function createcardcarousel(Prod){
     return `
-    <div class="card m-2" style="width: 18rem;">
-        <img src="${Prod.img}"class="card-img-top" alt="Imagen del producto">
+    <div class="card m-1 text-center">
+        <img src="${Prod.img}" class="card-img-top d-block img-thumbel w-50 mx-auto" alt="Imagen del producto">
         <div class="card-body">
             <h5 class="card-title">${Prod.titulo}</h5>
-            <p class="card-text">$${Prod.precio}</p>
+            <p class="card-text pb-2">$${Prod.precio}</p>
             <button class="button-shop-carousel" type="button" data-id=${Prod.id}>COMPRAR</button>
         </div>
     </div>
