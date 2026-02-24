@@ -2,7 +2,7 @@
     font-family: "Hind Vadodara", sans-serif;
 }
 
-aside, html, body, p, h1, h2, .bar-vertical, nav, ul, li, a{
+aside, html, body, p, h1, h2, .bar-vertical, .footer-bar-vertical, nav, ul, li, a{
     margin: 0;
     padding: 0;
     scrollbar-color: var(--color-secondary) var(--color-primary);
@@ -55,21 +55,21 @@ body{
     width: auto;
 }
 
-.bar-horizontal {
+.bar-horizontal{
     list-style-type: none;
     margin: 0;
     padding: 0;
     margin-left: 5px;
 }
 
-.bar-horizontal li {
+.bar-horizontal li{
     padding: 0;
     margin-top:10px;
     margin-bottom: 10px;
     float: left;
 }
 
-.bar-horizontal li a {
+.bar-horizontal li a{
     display: block;
     color:var(--color-white);
     text-align: center;
@@ -372,6 +372,103 @@ body{
     color: var(--color-secondary);
 }
 
+.footer-bar-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-bar-vertical {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.footer-bar-vertical li {
+    padding: 0;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.footer-bar-vertical li a{
+    display: block;
+    color:var(--color-white);
+    text-align: left;
+    padding: 0px 8px 0px 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(15px,calc(1vw + 4px),17px);
+}
+
+.footer-bar-vertical li a:hover, .titulo-footer-bar a:hover, .footer-bar-horizontal li a:hover {
+    color: var(--color-secondary);
+}
+
+.titulo-footer-bar a{
+    display: block;
+    color:var(--color-white);
+    padding: 0px;
+    text-align: left;
+    margin-top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(15px,calc(1vw + 4px),17px);
+}
+
+.footer-bar-horizontal{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-bar-horizontal li {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.footer-bar-horizontal li a{
+    display: block;
+    color:var(--color-white);
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.footer-bar{
+    margin-left:28px;
+    margin-right: 25px;
+}
+
+.footer-bar-contact{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left:28px;
+    margin-right: 25px;
+}
+
+.footer-bar-contact a{
+    margin: 0;
+}
+
+.logo-footer-div{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    text-align: right;
+    flex-flow: row nowrap;
+    margin-left: 30px;
+}
+
 #carouselcategoria{
     width: 140vh;
     height: 60vh;
@@ -389,7 +486,6 @@ body{
 
 #productCarousel{
     width: 140vh;
-    height: 80vh;
     overflow: hidden;
 }
 

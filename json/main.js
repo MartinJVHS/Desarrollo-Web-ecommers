@@ -95,8 +95,8 @@ function chargedata(metadata, category)  {
             document.getElementById(Boton).addEventListener('click', function(event) {
                 event.preventDefault();
                 category = CATEGORIAS[index];
-                TITULOCATEGORIA.textContent = TITULOS[index];
                 chargedata(metadata, category);
+                TITULOCATEGORIA.textContent = TITULOS[index];
             });
         });
 
@@ -132,14 +132,15 @@ function Createcards(diveable, metadata, category, searching){
     SPANCOUNT.textContent = localStorage.getItem('spancount');
     if (category.length > 0){
         const SEARCHRESULT = metadata.productos.filter(Producto => category.includes(Producto.categoria)).map(Producto => { 
-            return createcardtag(Producto) });
+            return createcardtag(Producto)});
+            TITULOCATEGORIA.textContent = category[0].toUpperCase(); 
         Productos = SEARCHRESULT.join('');
     } else if (category.length === 0 && searching.value.trim() !== '') {
         search = searching.value.toLowerCase();
         const SEARCHRESULT = metadata.productos.filter(Producto => Producto.titulo.toLowerCase().includes(search)).map(Producto => { 
             return createcardtag(Producto) });
         Productos = SEARCHRESULT.join('');
-        TITULOCATEGORIA.textContent = 'RESULTADO DE: ' + searching.value; 
+        TITULOCATEGORIA.textContent = 'RESULTADO DE: ' + searching.value.toUpperCase(); 
     } else if (searching.value === '') {
         const SEARCHRESULT = metadata.productos.map(Producto => { 
             return createcardtag(Producto) });
@@ -177,7 +178,7 @@ function Createcardscarousel(metadata){
         espaciorandom = Math.floor(Math.random() * (8 - 0 + 1)) + 0;
         if (espaciorandomanterior.length !== 0){
             while (espaciorandomanterior.includes(espaciorandom)){
-                espaciorandom = Math.floor(Math.random() * (8 - 0 + 1)) + 0
+                espaciorandom = Math.floor(Math.random() * (8 - 0 + 1)) + 0;
             }
         }
         categoryrandom = CATEGORIAS[espaciorandom]
@@ -230,7 +231,7 @@ function createcardtag(Prod){
             <img src="${Prod.img}" alt="Imagen del producto">
         </div>
         <div class="card-product-title-price">
-            <a href="#"><h2 class="title-product">${Prod.titulo}</h2></a>
+            <a href="#"><h2 class="title-product">${Prod.titulo.toUpperCase()}</h2></a>
             <p>Precio: $${Prod.precio}</p>
         </div>
         <div class="btn-products">
@@ -244,7 +245,7 @@ function createcardcarousel(Prod){
     <div class="card m-1 text-center">
         <img src="${Prod.img}" class="card-img-top d-block img-thumbel w-50 mx-auto" alt="Imagen del producto">
         <div class="card-body">
-            <h5 class="card-title">${Prod.titulo}</h5>
+            <h5 class="card-title">${Prod.titulo.toUpperCase()}</h5>
             <p class="card-text pb-2">$${Prod.precio}</p>
             <button class="button-shop-carousel" type="button" data-id=${Prod.id}>COMPRAR</button>
         </div>
